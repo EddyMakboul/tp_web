@@ -1,0 +1,14 @@
+[
+  { "nom" : "electro",
+    "classe" : "electro",
+    "couleur" : "deep blue"
+  },
+  { "nom" : "retro 80",
+    "classe" : "retro",
+    "couleur" : "ligthing blue"
+  },
+  { "nom" : "pop alternatif",
+    "classe" : "pop",
+    "couleur" : "pure red"
+  }
+]

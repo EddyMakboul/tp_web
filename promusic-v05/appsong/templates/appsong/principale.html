@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+{% load static %}
+    <html>
+      <head>        
+        <link rel="stylesheet" type="text/css" 
+              href="{% static 'appsong/catacha.css' %}" />
+        <meta charset="UTF-8">
+        <title>{{titre}}</title>
+      </head>
+      <body>
+        <h1>{{titre}}</h1>
+
+		{% if not cate %}
+        <p>
+        Erreur : categories.json absent
+        </p>
+        {% else %}
+		<table>
+         {% for chanson in cate %}
+        <tr> 
+			<td>{{chanson.nom}}</td>
+		</tr>
+        {% endfor %}
+		</table>
+        {% endif %}
+
+
+        {% if not cata %}
+        <p>
+        Erreur : catalogue.json absent
+        </p>
+ 	     {% else %}
+         <table>
+         {% for chanson in cata %}
+		<tr>
+         	<td> <a href="http://localhost:8000/songs/chanson/{{chanson.id}}/"> {{chanson.titre}}</a></td> 
+			<td> {{chanson.groupe}}</td> 
+			<td> {{chanson.categorie}}</td>
+		</tr>
+         {% endfor %}
+         </table>
+
+        {% endif %}
+
+      </body>
+    </html> 

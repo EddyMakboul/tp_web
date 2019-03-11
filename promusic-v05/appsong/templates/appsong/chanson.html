@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+    <html>
+      <head>        
+        <link rel="stylesheet" type="text/css" 
+              href="{% static 'appsong/catacha.css' %}" />
+        <meta charset="UTF-8">
+
+		<title>
+		{% if not chanson %}	
+		Chanson inconnue	
+		{% else % }	
+		{{chanson.titre}}
+        {% endif %}
+		</title>
+      </head>
+
+      <body>
+	
+		{% if not chanson %}
+        <h1>
+        Chanson inconnue
+        </h1>
+		<p>Erreur : la chanson n'a pas été trouvée</p>
+        {% else %}
+		<h1>{{chanson.titre}} </h1>
+
+		<p> {{paroles}}</p>
+        {% endif %}
+
+      </body>
+    </html> 

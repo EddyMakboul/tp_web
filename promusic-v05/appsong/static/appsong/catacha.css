@@ -1,0 +1,89 @@
+h1{
+
+    border-bottom : solid;
+    border-bottom-width : 2px;
+    border-bottom-color : FBA90A#;
+    background-color : white;
+    text-align : center;
+    margin-left : 0px;
+    margin-right : 0px;
+    margin-top : 0px;
+    padding : 5px;
+    color: black;
+    font-family : Noto Sans;
+
+}
+
+h2{
+
+    border-left : solid;
+    border-left-color : #FBA90A;
+    padding-left : 5px;
+    font-family : Noto Sans;
+    background-color : #FDD27C;
+
+}
+
+h4{
+
+    font-family : Noto Sans;
+
+}
+
+li{
+
+    font-family : Noto Sans;
+    text-align : center;
+
+}
+
+
+li1{
+
+    font-family : Noto Sans;
+
+}
+
+
+p{
+
+    font-family : Noto Sans;
+    font-weight : bold;
+
+}
+
+a, a:hover{
+
+    text-decoration: none;
+
+}
+
+a, a:visited{
+
+    color: #183BF0;
+
+}
+
+
+pre{
+
+    text-align : center;
+    font-family : Noto Sans;
+
+}
+
+table{
+
+    border: 1px solid #FBA90A;
+    margin: auto;
+
+}
+
+td{
+
+    border: 1px solid #FBA90A;
+	padding:0%;
+
+}
+
+
