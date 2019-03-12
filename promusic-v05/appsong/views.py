@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.urls import reverse
 
 def charger_json(filename):
 	import json
@@ -29,6 +30,7 @@ def gen_page_chanson(request, chanson_id):
 	context={
 		'chanson':chanson,
 		'paroles':paroles,
+        'url_top' : reverse ('appsong:page_princ'),
 			}
 	return render(request,'appsong/chanson.html',context)
 
@@ -42,9 +44,11 @@ def chercher_chanson(catalogue,chanson_id):
 			return None
 
 def charger_parole(chanson):
-	paroles=open("appsong/"+chanson["fichier"],"r")
+	paroles=open("appsong/paroles/"+chanson["fichier"],"r")
 	return paroles
 
+
+	
 
 	
 

@@ -24,9 +24,18 @@
 		<p>Erreur : la chanson n'a pas été trouvée</p>
         {% else %}
 		<h1>{{chanson.titre}} </h1>
-
-		<p> {{paroles}}</p>
+        <h2>{{chanson.groupe}}</h2>
+        <h4> Catégorie(s) :</h4>
+        <p>{{chanson.categorie}}</p>
+        <p><a href = "{{chanson.youtube}}" >Écouter</a></p>
+        <p>{{paroles}}</p>
+        <iframe width="853" height="480"
+    src="{{chanson.youtube}}" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope;
+    picture-in-picture" allowfullscreen></iframe>
         {% endif %}
+        <p><a href="{{url_top}}">Retour vers la page principale</a> </p>
+        
 
       </body>
     </html> 
