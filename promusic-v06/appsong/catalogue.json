@@ -1,0 +1,74 @@
+[
+  { "fichier"  : "fichier1.txt",
+    "groupe"   : "Fall Out Boy",
+    "titre"    : "Immortals",
+    "youtube"  : "https://www.youtube.com/watch?v=l9PxOanFjxQ",
+    "categorie" : "electro",
+	"id":"1"
+  },
+  { "fichier"  : "fichier2.txt",
+    "groupe"   : "Post Malone",
+    "titre"    : "Wow.",
+    "youtube"  : "https://www.youtube.com/watch?v=D0i23wZ0IeE",
+    "categorie" : "electro",
+	"id":"2"
+  },
+  { "fichier"  : "fichier3.txt",
+    "groupe"   : "Daft Punk",
+    "titre"    : "Starboy",
+    "youtube"  : "https://www.youtube.com/watch?v=34Na4j8AVgA",
+    "categorie" : "electro",
+	"id":"3"
+  },
+  { "fichier"  : "fichier4.txt",
+    "groupe"   : "Sneazzy",
+    "titre"    : "Tchernobyl",
+    "youtube"  : "https://www.youtube.com/watch?v=21MOwLpTA78",
+    "categorie" : "Rap",
+	"id":"4"
+  },
+  { "fichier"  : "fichier5.txt",
+    "groupe"   : "TULE,Christ Linton",
+    "titre"    : "Fearless Pt.II",
+    "youtube"  : "https://www.youtube.com/watch?v=b5BNUa_op2o",
+    "categorie" : "electro",
+	"id":"5"
+  },
+  { "fichier"  : "fichier6.txt",
+    "groupe"   : "Juice WRLD",
+    "titre"    : "Lucid Dreams",
+    "youtube"  : "https://www.youtube.com/watch?v=mzB1VGEGcSU",
+    "categorie" : "electro",
+	"id":"6"
+  },
+  { "fichier"  : "fichier7.txt",
+    "groupe"   : "benny blanco,Halsey,Khalid",
+    "titre"    : "Eastside",
+    "youtube"  : "https://www.youtube.com/watch?v=56WBK4ZK_cw",
+    "categorie" : "electro",
+	"id":"7"
+  },
+  { "fichier"  : "fichier8.txt",
+    "groupe"   : "Kendrick Lamar",
+    "titre"    : "All the stars",
+    "youtube"  : "https://www.youtube.com/watch?v=JQbjS0_ZfJ0",
+    "categorie" : "pop",
+	"id":"8"
+  },
+  { "fichier"  : "fichier9.txt",
+    "groupe"   : "TIX",
+    "titre"    : "Shotgun",
+    "youtube"  : "https://www.youtube.com/watch?v=uZiiLs5WvuM",
+    "categorie" : "Rap",
+	"id":"9"
+
+  },
+  { "fichier"  : "fichier10.txt",
+    "groupe"   : "Night Lovell",
+    "titre"    : "Barbie Doll",
+    "youtube"  : "https://www.youtube.com/watch?v=htDyjeqHSfI",
+    "categorie" : "pop",
+	"id":"10"
+
+  }
+]

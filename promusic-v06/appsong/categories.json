@@ -1,0 +1,14 @@
+[
+  { "nom" : "Electro",
+    "classe" : "Electro",
+    "couleur" : "deep blue"
+  },
+  { "nom" : "Rap",
+    "classe" : "Rap",
+    "couleur" : "ligthing blue"
+  },
+  { "nom" : "Pop",
+    "classe" : "Pop",
+    "couleur" : "pure red"
+  }
+]

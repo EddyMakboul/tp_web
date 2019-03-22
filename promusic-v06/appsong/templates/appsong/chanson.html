@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ {% load static %}
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" 
+              href="{% static 'appsong/catacha.css' %}" />
+        <title>
+
+          {% if not chanson %}  
+
+          Chanson inconnue
+
+          {% else % } 
+
+          {chanson.titre}}
+
+          {% endif %}
+
+        </title>  
+
+      </head>
+
+      <body>
+
+        <h1>
+        {% if not chanson %}
+
+        Chanson inconnue
+
+        <p> Erreur: la chanson n'a pas été trouvée </p>
+
+        {% else %}
+
+        {{chanson.titre}}
+
+        {% endif %}
+        </h1>
+
+        <h3> {{chanson.groupe}}</h3>
+
+        <h4> Categorie: {{chanson.categorie.all|join:','}} </h4>
+        <h4> Paroles: </h4>
+
+        <pre>{{paroles.paroles}}</pre>
+
+        <iframe id="player" type="text/html" width="500" height="280" src="https://www.youtube.com/embed/{{num_youtube}}" frameborder="0"></iframe>
+
+         <p><a href="{{url_top}}">Retour vers la page principale</a> </p>
+
+      </body>
+    </html> 
