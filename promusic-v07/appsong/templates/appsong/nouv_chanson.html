@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+   <html>
+     <head>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" type="text/css" 
+             href="{% static 'appsong/catacha.css' %}" />
+       <title>
+         Nouvelle Chanson
+       </title>  
+
+     </head>
+
+     <body>
+            <fieldset class="filtre1">
+                    <legend>Saisie d'une Chanson</legend>
+                    <form action="" method="post">
+                      {{nc_form.as_p}}
+                      <p>
+                        <input type="submit" name="b_creer" value="Créer" />
+                        {% csrf_token %}
+                      </p>
+                    </form>
+            </fieldset>
+            {% if nc_message %}
+        <p>{{nc_message}}</p>
+        {% endif %}
+
+      
+                  <p><a href="{{url_top}}">Retour vers la page principale</a> </p>
+     </body>
+   </html> 

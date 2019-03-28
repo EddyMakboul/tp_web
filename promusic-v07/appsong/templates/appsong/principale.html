@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" 
+              href="{% static 'appsong/catacha.css' %}" />
+        <title>{{titre}}</title>
+      </head>
+
+      <body>
+        <h1>{{titre}}</h1>
+
+        {% if not catalogue %}
+        <p>Erreur : catalogue.json absent</p>
+        {% else %}
+
+        <table>
+            
+            <tr class="tete">
+        		<td>Titre</td>
+        		<td>Groupe</td>
+        		<td>Catégorie</td>
+        	</tr>
+            <tr class="corp">
+                {% for chanson in catalogue %}
+                <td><a href="{% url 'appsong:chanson_id' chanson.id%}">{{chanson.titre}}</a></td>
+                <td><p>{{chanson.groupe}}</p></td>
+                <td><p>{{chanson.categorie.all|join:', '}}</p></td>
+            </tr>
+                {% endfor %}
+
+        {% endif %}
+
+        <p><a href="{{url_top}}">Crée une musique</a> </p>
+        </table>
+      </body>
+    </html> 
